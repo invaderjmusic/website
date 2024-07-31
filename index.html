@@ -360,6 +360,28 @@
             line-height: 2.5rem;
             padding: 1em;
         }
+
+        #aboveNavDiv {
+            height: 2em;
+        }
+
+        #belowNavDiv {
+            height: 1.5em
+        }
+
+        @media screen and (max-width: 370px) {
+            .navlink {
+                line-height: 2.4em;
+            }
+
+            #aboveNavDiv {
+                height: 1em;
+            }
+
+            #belowNavDiv {
+                height: 0;
+            }
+        }
     </style>
 </head>
 
@@ -389,12 +411,13 @@
         <a class="tick fab fa-tiktok" href="https://www.tiktok.com/@invaderjmusic" target="_blank"
             aria-label="InVadeRJMusic on TikTok"></a>
     </div>
-    <div style="height: 2em"></div>
+    <div id="aboveNavDiv"></div>
     <nav>
+        <a href="/about" class="navlink">About</a>
         <a href="#releases" class="navlink">Music</a>
         <a href="#contact" class="navlink">Contact</a>
     </nav>
-    <div style="height: 1.5em"></div>
+    <div id="belowNavDiv"></div>
     <section>
         <div class="release-box"
             style="background-image: url('/assets/bs-background-test.webp');">
@@ -513,7 +536,7 @@
         </p>
 
         <p>
-            Alternatively, you can DM me on my
+            Alternatively, you can DM me on my socials - preferably on
             <a class="hyperlink" href="https://www.instagram.com/invaderjmusic/" target="_blank">Instagram</a>.
         </p>
     </section>
@@ -539,7 +562,7 @@
           padding-bottom: 0.7rem;
           font-size: 1rem;
         ">
-            Home page last updated: 12th June 2024
+            Home page last updated: 30th July 2024
         </p>
     </footer>
 </body>

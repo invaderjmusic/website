@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About - InVadeRJ</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#611786" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffcc00" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#611786" />
+
+
+    <link rel="canonical" href="https://invaderj.rocks/about" />
+    <meta name="description" content="Learn more about InVadeRJ and how his music came to be." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="About - InVadeRJ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://invaderj.rocks/about" />
+    <meta property="og:description" content="Learn more about InVadeRJ and how his music came to be." />
+    <meta property="og:image" content="https://invaderj.rocks/assets/full-size-r.png" />
+    <meta name="twitter:card" content="summary"
+        value="Learn more about InVadeRJ and how his music came to be." />
+    <link href="/fonts.css" rel="stylesheet" />
+    <link href="/font-awesome-brands.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: "Raleway", sans-serif;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            color: #ffcc00;
+            background-color: #05053b;
+            text-align: center;
+        }
+
+        .headingTop {
+            font-family: "Raleway", sans-serif;
+            font-size: 3.8rem;
+            line-height: 3.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 1.3rem;
+        }
+
+        @media screen and (max-width: 445px) {
+            .headingTop {
+                letter-spacing: 0.8rem;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            .headingTop {
+                letter-spacing: 0.3rem;
+            }
+        }
+
+        @media screen and (max-width: 315px) {
+            .headingTop {
+                letter-spacing: 0px;
+            }
+        }
+
+        .tooNarrow {
+            display: none;
+        }
+
+        @media screen and (max-width: 320px) {
+            .tooNarrow {
+                display: block;
+            }
+        }
+
+        .socials {
+            margin-top: 1.5em;
+            line-height: 2.2em;
+        }
+
+        .socials a {
+            padding-left: 0.2em;
+            padding-right: 0.2em;
+        }
+
+        .masto:hover {
+            color: #ffcc00;
+        }
+
+        .masto {
+            font-size: 2.5rem;
+            color: #858AFA;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .sound:hover {
+            color: #ffcc00;
+        }
+
+        .sound {
+            font-size: 2.5rem;
+            color: #ff8b26;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .inster:hover {
+            color: #ffcc00;
+        }
+
+        .inster {
+            font-size: 2.5rem;
+            color: #f53677;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .whytea:hover {
+            color: #ffcc00;
+        }
+
+        .whytea {
+            font-size: 2.5rem;
+            color: #ff2626;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .band:hover {
+            color: #ffcc00;
+        }
+
+        .band {
+            font-size: 2.5rem;
+            color: #1ea0c4;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .tick:hover {
+            color: #ffcc00;
+        }
+
+        .tick {
+            font-size: 2.5rem;
+            color: #ededed;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .hyperlink {
+            color: #65b8f7;
+            font-weight: 600;
+        }
+
+        .hyperlink:visited {
+            color: #ff6a00;
+        }
+
+        .release-box {
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 50vh;
+            transition: filter 0.2s;
+        }
+
+        .albumart {
+            width: 50%;
+            min-width: 140px;
+            max-width: 300px
+        }
+
+        .release-box:hover .albumart {
+            filter: drop-shadow(0px 0px 20px black);
+        }
+
+        .navlink {
+            background-color: #611786;
+            color: white;
+            text-decoration: underline solid #ffcc00 2px;
+            font-weight: 700;
+            padding: 0.3em;
+            margin-left: 0.2em;
+            margin-right: 0.2em;
+        }
+
+        .navlink:hover,
+        .active {
+            color: #ffcc00;
+        }
+
+        #aboveNavDiv {
+            height: 2em;
+        }
+
+        #belowNavDiv {
+            height: 3em;
+        }
+
+        @media screen and (max-width: 370px) {
+            .navlink {
+                line-height: 2.4em;
+            }
+
+            #aboveNavDiv {
+                height: 1em;
+            }
+
+            #belowNavDiv {
+                height: 1.5em;
+            }
+        }
+
+    .soundcloud-excerpt {
+      width: 70%;
+      background-color: #000633;
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 5px 3px #020624;
+      padding: 0.5rem;
+      margin: auto;
+      text-align: left;
+    }
+
+    .soundcloud-excerpt p {
+      padding: 1rem;
+      margin: 0px;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .soundcloud-excerpt h2 {
+      padding: 1rem;
+      margin: 0px;
+      color: #ffcc00;
+      font-size: 2rem;
+    }
+
+    
+    .section-image {
+        height: 200px;
+        width: 70%;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin: 1em auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 900px) {
+      .soundcloud-excerpt {
+        width: 90%;
+      }
+
+      .section-image {
+        width: 90%;
+        background-position: top !important;
+      }
+
+      .soundcloud-excerpt p {
+        padding: 1rem 0px;
+      }
+    }
+
+    .strong {
+        font-weight: 600; 
+        color: #ffcc00
+    }
+    </style>
+</head>
+
+<body>
+    <div class="tooNarrow">
+        <p style="font-size: 1.3rem">
+            This website is not optimised for your device. <br />
+            If you are on a phone, try rotating the screen.
+        </p>
+    </div>
+    <div style="height: 2em"></div>
+    <h1 class="headingTop">
+        InVadeR<span style="letter-spacing: 0rem">J</span>
+    </h1>
+
+    <div class="socials">
+        <a class="sound fab fa-soundcloud" href="https://soundcloud.com/invaderj-official" target="_blank"
+            aria-label="InVadeRJ-Official on SoundCloud"></a>
+        <a class="band fab fa-bandcamp" href="https://invaderj.bandcamp.com/" target="_blank"
+            aria-label="InVadeRJ on Bandcamp"></a>
+        <a class="whytea fab fa-youtube" href="https://youtube.com/@InVadeRJMusic" target="_blank"
+            aria-label="InVadeRJMusic on YouTube"></a>
+        <a class="inster fab fa-instagram" href="https://www.instagram.com/invaderjmusic/" target="_blank"
+            aria-label="InVadeRJMusic on Instagram"></a>
+        <a rel="me" class="masto fab fa-mastodon" href="https://mastodon.scot/@invaderjmusic" target="_blank"
+            aria-label="InVadeRJMusic on Mastodon"></a>
+        <a class="tick fab fa-tiktok" href="https://www.tiktok.com/@invaderjmusic" target="_blank"
+            aria-label="InVadeRJMusic on TikTok"></a>
+    </div>
+    <div id="aboveNavDiv"></div>
+    <nav>
+        <a href="#" class="navlink active">About</a>
+        <a href="/" class="navlink">Music</a>
+        <a href="/#contact" class="navlink">Contact</a>
+    </nav>
+    <div id="belowNavDiv"></div>
+
+    <div class="soundcloud-excerpt">
+        <p>
+            Hi, I'm InVadeRJ. I live in Scotland today but I'm from many places <span class="strong">around the world</span>.
+            <br /><br />
+            I can't seem to write a song that isn't about heartbreak. Though in a variety of genres, my songs share a signature <span class="strong">melancholic tone</span> with French lyrics, recorder parts and minor 4 chords sprinkled in to the mix.
+        </p>
+        <p>
+            My musical journey began when my mother <span class="strong">taught me to play the recorder</span> and the piano as a child. 
+            I joined choirs during middle and high school, solidifying my love for singing. Despite this, I never manage to sing my own songs as well as they sound in my head...
+        </p>
+    </div>
+
+    <div class="section-image" style="background-image: url('/assets/website-image.webp'); background-position: left top -200px;"></div>
+
+    <div class="soundcloud-excerpt">
+        <p>
+            My existing interest in composition only became a passion for songwriting in 2021. 
+            <span class="strong">Armed with free music software</span> including MuseScore and LMMS, I created and released my first song - <a class="hyperlink" href="/i-loved-you">I Loved You</a> - in 2022.
+            I had written lyrics but was too embarrassed to record the vocal part, so the track released as an instrumental. 
+            <br /><br />
+            Later that year, I joined forces with my producer friends <span class="strong">Feàrn</span> and <span class="strong">Harris Hall</span>, who would become key collaborators. 
+            Together we created the two-track single <a class="hyperlink" href="/daydreaming">Daydreaming</a>, kicking off a series of releases recorded and produced in our respective bedrooms.
+            They worked with me again on <a class="hyperlink" href="/star">Star</a> in 2023. 
+        </p>
+    </div>
+
+    <div class="section-image" style="background-image: url('/assets/daydreaming-photo-strip.webp');"></div>
+
+    <div class="soundcloud-excerpt">
+        <p>
+            Each release's page has more information about its production and discusses the meaning behind each song.
+        </p>
+    </div>
+
+    <div style="height: 1em"></div>
+    <footer style="
+        background-color: #521073;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+      ">
+        <p style="
+          margin-bottom: 0px;
+          margin-top: 0px;
+          padding-top: 0.7rem;
+          font-size: 1.5rem;
+        ">
+            © 2024 InVadeRJ
+        </p>
+        <p style="
+          margin-bottom: 0px;
+          margin-top: 0px;
+          padding-bottom: 0.7rem;
+          font-size: 1rem;
+        ">
+            Page last updated: 30th July 2024
+        </p>
+    </footer>
+</body>
+
+</html>
