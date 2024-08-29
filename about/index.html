@@ -200,7 +200,7 @@
         }
 
         #belowNavDiv {
-            height: 3em;
+            height: 2em;
         }
 
         @media screen and (max-width: 370px) {
@@ -213,32 +213,33 @@
             }
 
             #belowNavDiv {
-                height: 1.5em;
+                height: 0.5em;
             }
         }
 
     .soundcloud-excerpt {
-      width: 70%;
-      background-color: #000633;
-      border-radius: 0.5rem;
-      box-shadow: 0px 0px 5px 3px #020624;
-      padding: 0.5rem;
-      margin: auto;
-      text-align: left;
+        width: 70%;
+        margin: auto;
+        background-color: #000633;
+        border-radius: 0.5rem;
+        box-shadow: 0px 0px 5px 3px #020624;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        text-align: left;
     }
 
     .soundcloud-excerpt p {
-      padding: 1rem;
-      margin: 0px;
-      color: white;
-      font-size: 1.5rem;
+        padding: 1rem;
+        margin: 0px;
+        color: white;
+        font-size: 1.5rem;
     }
 
     .soundcloud-excerpt h2 {
-      padding: 1rem;
-      margin: 0px;
-      color: #ffcc00;
-      font-size: 2rem;
+        padding: 1rem;
+        margin: 0px;
+        color: #ffcc00;
+        font-size: 2rem;
     }
 
     
@@ -246,31 +247,68 @@
         height: 200px;
         width: 70%;
         border-radius: 0.5rem;
-        padding: 0.5rem;
         margin: 1em auto;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    @media screen and (max-width: 900px) {
-      .soundcloud-excerpt {
-        width: 90%;
-      }
-
-      .section-image {
-        width: 90%;
-        background-position: top !important;
-      }
-
-      .soundcloud-excerpt p {
-        padding: 1rem 0px;
-      }
     }
 
     .strong {
         font-weight: 600; 
         color: #ffcc00
     }
+
+    .flexbox {
+        width: 70%;
+        margin: 1em auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flexbox .section-image {
+        margin: 0 1em 0 0;
+        width: 40%;
+        height: auto;
+    }
+
+    .flexbox .soundcloud-excerpt {
+        width: 60%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .flexbox {
+            flex-direction: column;
+        }
+
+        .flexbox .section-image {
+            margin: 0 0 1em 0;
+            width: 100%;
+            height: 200px;
+        }
+
+        .flexbox .soundcloud-excerpt {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .soundcloud-excerpt {
+            width: 95%;
+        }
+      
+        .section-image {
+            width: 95%;
+            background-position: top !important;
+        }
+      
+        .soundcloud-excerpt p {
+            padding: 0.5rem 0.5rem;
+        }
+      
+        .flexbox {
+            width: 95%;
+        }
+    }
+
     </style>
 </head>
 
@@ -308,12 +346,17 @@
     </nav>
     <div id="belowNavDiv"></div>
 
+    <div class="flexbox">
+        <div class="section-image" style="background-image: url('/assets/profile-photo-web.webp'); background-position: top !important;"></div>
+        <div class="soundcloud-excerpt">
+            <p>
+                Hi, I'm InVadeRJ. I live in Scotland today but I'm from many places <span class="strong">around the world</span>.
+                <br /><br />
+                I can't seem to write a song that isn't about heartbreak. Though in a variety of genres, my songs share a signature <span class="strong">melancholic tone</span> with French lyrics, recorder parts and minor 4 chords sprinkled in to the mix.
+            </p>
+        </div>
+    </div>
     <div class="soundcloud-excerpt">
-        <p>
-            Hi, I'm InVadeRJ. I live in Scotland today but I'm from many places <span class="strong">around the world</span>.
-            <br /><br />
-            I can't seem to write a song that isn't about heartbreak. Though in a variety of genres, my songs share a signature <span class="strong">melancholic tone</span> with French lyrics, recorder parts and minor 4 chords sprinkled in to the mix.
-        </p>
         <p>
             My musical journey began when my mother <span class="strong">taught me to play the recorder</span> and the piano as a child. 
             I joined choirs during middle and high school, solidifying my love for singing. Despite this, I never manage to sing my own songs as well as they sound in my head...
@@ -364,7 +407,7 @@
           padding-bottom: 0.7rem;
           font-size: 1rem;
         ">
-            Page last updated: 30th July 2024
+            Page last updated: 29th August 2024
         </p>
     </footer>
 </body>
