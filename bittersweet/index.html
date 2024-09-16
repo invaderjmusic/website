@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Bittersweet - InVadeRJ</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#611786" />
+  <meta name="msapplication-TileColor" content="#ffc40d" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffcc00" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#611786" />
+
+  <link rel="canonical" href="https://invaderj.rocks/bittersweet" />
+  <meta name="description"
+    content="Featuring an 80s-disco-inspired track and an acoustic song with rich harmonies, this single marks the end of the first era of my music." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Star - InVadeRJ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://invaderj.rocks/bittersweet" />
+  <meta property="og:description"
+    content="Featuring an 80s-disco-inspired track and an acoustic song with rich harmonies, this single marks the end of the first era of my music." />
+  <meta property="og:image"
+    content="https://invaderj.rocks/assets/bittersweet-album-art-web.webp" />
+  <meta name="twitter:card" content="summary"
+    value="Featuring an 80s-disco-inspired track and an acoustic song with rich harmonies, this single marks the end of the first era of my music." />
+  <link href="/fonts.css" rel="stylesheet" />
+  <link href="/font-awesome-brands.css" rel="stylesheet" />
+  <link href="/font-awesome-solid.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: "Raleway", sans-serif;
+      font-size: 1.7rem;
+      line-height: 2rem;
+      color: #ffcc00;
+      background-color: #05053b;
+    }
+
+    .heading {
+      font-family: "Raleway", sans-serif;
+      font-size: 3rem;
+      line-height: 3.2rem;
+      font-weight: 700;
+      color: #ffcc00;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .fourtybox {
+      float: left;
+      width: 40%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .sixtybox {
+      float: left;
+      width: 60%;
+      padding: 1rem;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    @media screen and (max-width: 900px) {
+      .fourtybox {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .sixtybox {
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+
+    .button {
+      background-color: #020226;
+      color: #ffcc00;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 0.5rem 0.8rem;
+      border-radius: 1rem;
+      border: 3px solid #611786;
+      transition: 0.5s;
+      margin: 0.5rem 0;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #611786;
+      border: 3px solid #ffcc00;
+    }
+
+    .centerbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tooNarrow {
+      display: none;
+    }
+
+    @media screen and (max-width: 280px) {
+      .tooNarrow {
+        display: block;
+      }
+    }
+
+    .homelink:hover {
+      color: #ffcc00;
+    }
+
+    .homelink {
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+    }
+
+    .soundcloud-excerpt {
+      width: 70%;
+      box-sizing: border-box;
+      background-color: #000633;
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 5px 3px #020624;
+      padding: 0.5rem;
+      margin: auto;
+      text-align: left;
+    }
+
+    .soundcloud-excerpt p {
+      padding: 1rem;
+      margin: 0px;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .soundcloud-excerpt h2 {
+      padding: 1rem;
+      margin: 0px;
+      color: #ffcc00;
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      .soundcloud-excerpt {
+        width: 100%
+      }
+    }
+
+    .sound:hover {
+      color: #ff7700;
+    }
+
+    .sound {
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+      padding: 5px;
+      padding-left: 1rem;
+    }
+
+    .back {
+      margin-left: 8%;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: #ffcc00;
+    }
+
+    .back:hover {
+      color: #fff;
+    }
+
+    .back .fas {
+      font-size: 2rem;
+      vertical-align: -15%;
+    }
+
+    .responsive-margin {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    @media screen and (max-width: 400px) {
+      .responsive-margin {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+
+    .hyperlink {
+      color: #65b8f7;
+      font-weight: 600;
+    }
+
+    .hyperlink:visited {
+      color: #ff6a00;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="height: 1em"></div>
+  <a class="back" href="/" aria-hidden="true">
+    <span class="fas"></span>
+    Home
+  </a>
+
+  <div style="text-align: center">
+    <div class="tooNarrow">
+      <p style="font-size: 1.3rem">
+        This website is not optimised for your device. <br />
+        If you are on a phone, try rotating the screen.
+      </p>
+    </div>
+
+    <div style="height: 1em"></div>
+    <div class="clearfix">
+      <div class="fourtybox">
+        <img
+          src="/assets/bittersweet-album-art-web.webp"
+          style="width: 70%; min-width: 170px; max-width: 400px"
+          alt="Bittersweet album art. A photo of a park. A church spire punctuates the skyline. To the left, two people walk away from the camera. Text reads: InVadeRJ, Bittersweet." />
+      </div>
+      <div class="sixtybox">
+        <h1 class="heading">Bittersweet</h1>
+        <p style="color: white">
+          Something More is an 80s-disco-inspired revamp of my first ever song. Goodbye is an acoustic song with rich harmonies and a lot of collaboration. Together, they mark the end of the first era of my music.
+        </p>
+        <a class="button" href="https://ampl.ink/9YKAb" target="_blank">
+          Listen Now
+        </a>
+        <a class="button" href="https://genius.com/albums/Invaderj/Bittersweet" target="_blank">
+          View Lyrics
+        </a>
+      </div>
+    </div>
+    <div style="height: 1em"></div>
+    <div class="soundcloud-excerpt">
+      <a class="sound fab fa-soundcloud" href="https://soundcloud.com/invaderj-official" target="_blank"
+        aria-label="InVadeRJ-Official on SoundCloud"></a>
+      <h2>Something More</h2>
+      <p>
+        Looking back at a could-have-been romance where I didn't make a move, I couldn't help but wonder - were we really just friends, or was there something more between us?
+        <br /><br />
+        <span style="font-weight: 600; color: #ffcc00">Based on Harris's remix</span> of <a class="hyperlink" href="/i-loved-you">I Loved You</a>, this is essentially a lyric version of the original instrumental, borrowing phrases from its shelved lyrics and several musical elements from its score.<br /><br />
+        I managed to write in <span style="font-weight: 600; color: #ffcc00">two of my signature elements</span> - French lyrics and a recorder part. Harris added an 80s flair to the track with his signature polished synths.
+      </p>
+      <h2>Friendship and Love</h2>
+      <p>Being friends with her was far more rewarding than being in love with her. Maybe love shouldn't be the end goal?
+        <br /><br />
+        I turned this idea into an almost uplifting acoustic song. It was also <span style="font-weight: 600; color: #ffcc00">my biggest collab yet</span> - Matthew created folk vibes with the violin while Juan and Samuel (from Peru and Finland) added breadth to the backing vocals. <br /><br />
+        Feàrn filled in the rest, tying it all together to fulfill my vision for <span style="font-weight: 600; color: #ffcc00">the last song focused on this story</span>, the end of the first era of my music.
+        <br /><br />
+        For a deeper dive into the story which has inspired all of my music so far, check out <a class="hyperlink" href="https://www.youtube.com/watch?v=Qmp9-EYfYQ8" target="_blank">my YouTube video</a>.
+      </p>
+      </div>
+    <div style="height: 1em"></div>
+  </div>
+  <div style="height: 1em"></div>
+  <footer style="
+    background-color: #521073;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+  ">
+    <p style="
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-top: 0.7rem;
+      font-size: 1.5rem;
+    ">
+      © 2024 InVadeRJ
+    </p>
+    <p style="
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-bottom: 0.7rem;
+      font-size: 1rem;
+    ">
+      Page last updated: 16th September 2024
+    </p>
+  </footer>
+</body>
+
+</html>
