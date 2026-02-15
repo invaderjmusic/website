@@ -51,6 +51,12 @@
             color: #ffcc00;
         }
 
+        .motd {
+            padding: 1em 0em; 
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 0;
+        }
+
         .smolheading {
             font-family: "Raleway", sans-serif;
             font-size: 2.5rem;
@@ -362,6 +368,13 @@
             padding: 1em;
         }
 
+        .whitebox {
+            background-color: rgba(0, 0, 0, 0.7);
+            font-size: 1.7rem;
+            padding: 1em;
+            color: white;
+        }
+
         #aboveNavDiv {
             height: 2em;
         }
@@ -381,6 +394,32 @@
 
             #belowNavDiv {
                 height: 0;
+            }
+        }
+
+        .soundcloud-excerpt {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 0.5rem;
+            box-shadow: 0px 0px 5px 3px #000000;
+            margin-bottom: 1.5em;
+            margin-top: 1.5em;
+            padding: 1rem 0.5rem;
+        }
+
+        .soundcloud-excerpt p {
+            padding: 0.5rem 1rem;
+            margin: 0px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .soundcloud-excerpt .sound {
+            padding-left: 1rem;
+        }
+
+        @media screen and (max-width: 900px) {
+            .soundcloud-excerpt p {
+                padding: 1rem 0px;
             }
         }
     </style>
@@ -422,26 +461,36 @@
     <section>
         <div class="release-box"
             style="background-image: url('/assets/rp-background-2.webp');">
-            <h2 class="heading" style="padding: 1em 0em; background-color: rgba(0, 0, 0, 0.6);">Chapter 2 releasing 2026
+            <h2 class="heading motd">
+                Listen to Stories now!
             </h2>
-            <div class="clearfix" style="width: 100%">
-                <div class="fourtybox">
-                    <img src="/assets/rp-image-web.webp"
+            <div class="clearfix-flex" style="width: 100%">
+                <div class="fourty-flex">
+                    <img src="/assets/stories-image-web.webp"
                         class="albumart"
-                        alt="A nighttime photo of a street covered in snow." />
+                        alt="Stories album art. A nighttime photo of a street covered in snow, superimposed with a drawing of a woman's profile picture encircled by the Instagram story colours. Text reads: InVadeRJ." />
                 </div>
-                <div class="sixtybox">
-                    <p class="blackbox" style="background-color: rgba(0, 0, 0, 0.7)">
-                        Another heartbreak means another set of songs are in the works. The team was extra busy last year, so I've had to delay the releases. Follow my socials to stay updated!
+                <div class="sixty-flex">
+                    <p class="whitebox">
+                        My latest song is out now as a preview release on a few platforms! 
+                        It's due to be properly released on the single "Repentance" later this year.
                     </p>
-                    <a class="button black" href="https://www.instagram.com/invaderjmusic/" target="_blank">
-                        Instagram</a>
-                    <a class="button black" href="https://mastodon.scot/@invaderjmusic" target="_blank">
-                        Mastodon</a>
-                    <div style="height: 1em;"></div>
+                    <a class="button black" href="https://submithub.com/link/invaderj-stories" target="_blank">
+                        Listen Now
+                    </a>
+                    <a class="button black" href="https://genius.com/Invaderj-stories-lyrics" target="_blank">
+                        View Lyrics
+                    </a>
+                    <div class="soundcloud-excerpt">
+                        <a class="sound fab fa-soundcloud" href="https://soundcloud.com/invaderj-official" target="_blank"
+                          aria-label="InVadeRJ-Official on SoundCloud"></a>
+                        <p>
+                          The fear of losing our friendship stopped me from admitting how I really felt until it was too late. 
+                           This song is the story of another love that could have been, had I not been fated to fumble it...
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div style="height: 1em;"></div>
         </div>
     </section>
     <section>
@@ -586,7 +635,7 @@
           padding-bottom: 0.7rem;
           font-size: 1rem;
         ">
-            Home page last updated: 1st January 2026
+            Home page last updated: 15th February 2026
         </p>
     </footer>
 </body>
