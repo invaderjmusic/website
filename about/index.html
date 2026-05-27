@@ -29,7 +29,6 @@
     <meta name="twitter:card" content="summary"
         value="Learn more about InVadeRJ and how his music came to be." />
     <link href="/fonts.css" rel="stylesheet" />
-    <link href="/font-awesome-brands.css" rel="stylesheet" />
 
     <style>
         body {
@@ -79,79 +78,15 @@
         }
 
         .socials {
-            margin-top: 1.5em;
-            line-height: 2.2em;
+            border: 0; 
+            width: 100%; 
+            height: 70px
         }
 
-        .socials a {
-            padding-left: 0.2em;
-            padding-right: 0.2em;
-        }
-
-        .masto:hover {
-            color: #ffcc00;
-        }
-
-        .masto {
-            font-size: 2.5rem;
-            color: #858AFA;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .sound:hover {
-            color: #ffcc00;
-        }
-
-        .sound {
-            font-size: 2.5rem;
-            color: #ff8b26;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .inster:hover {
-            color: #ffcc00;
-        }
-
-        .inster {
-            font-size: 2.5rem;
-            color: #f53677;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .whytea:hover {
-            color: #ffcc00;
-        }
-
-        .whytea {
-            font-size: 2.5rem;
-            color: #ff2626;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .band:hover {
-            color: #ffcc00;
-        }
-
-        .band {
-            font-size: 2.5rem;
-            color: #1ea0c4;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .tick:hover {
-            color: #ffcc00;
-        }
-
-        .tick {
-            font-size: 2.5rem;
-            color: #ededed;
-            text-decoration: none;
-            padding: 5px;
+        @media screen and (max-width: 491px) {
+            .socials { 
+                height: 140px
+            }
         }
 
         .hyperlink {
@@ -196,7 +131,7 @@
         }
 
         #aboveNavDiv {
-            height: 2em;
+            height: 40px;
         }
 
         #belowNavDiv {
@@ -209,7 +144,7 @@
             }
 
             #aboveNavDiv {
-                height: 1em;
+                height: 20px;
             }
 
             #belowNavDiv {
@@ -324,20 +259,7 @@
         InVadeR<span style="letter-spacing: 0rem">J</span>
     </h1>
 
-    <div class="socials">
-        <a class="sound fab fa-soundcloud" href="https://soundcloud.com/invaderj-official" target="_blank"
-            aria-label="InVadeRJ-Official on SoundCloud"></a>
-        <a class="band fab fa-bandcamp" href="https://invaderj.bandcamp.com/" target="_blank"
-            aria-label="InVadeRJ on Bandcamp"></a>
-        <a class="whytea fab fa-youtube" href="https://youtube.com/@InVadeRJMusic" target="_blank"
-            aria-label="InVadeRJMusic on YouTube"></a>
-        <a class="inster fab fa-instagram" href="https://www.instagram.com/invaderjmusic/" target="_blank"
-            aria-label="InVadeRJMusic on Instagram"></a>
-        <a rel="me" class="masto fab fa-mastodon" href="https://mastodon.scot/@invaderjmusic" target="_blank"
-            aria-label="InVadeRJMusic on Mastodon"></a>
-        <a class="tick fab fa-tiktok" href="https://www.tiktok.com/@invaderjmusic" target="_blank"
-            aria-label="InVadeRJMusic on TikTok"></a>
-    </div>
+    <iframe src="/socials.html" class="socials"></iframe>
     <div id="aboveNavDiv"></div>
     <nav>
         <a href="#" class="navlink active">About</a>

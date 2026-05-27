@@ -52,7 +52,7 @@
         }
 
         .motd {
-            padding: 1em 0em; 
+            padding: 1em 0em;
             background-color: rgba(0, 0, 0, 0.6);
             margin-bottom: 0;
         }
@@ -246,79 +246,15 @@
         }
 
         .socials {
-            margin-top: 1.5em;
-            line-height: 2.2em;
+            border: 0;
+            width: 100%;
+            height: 70px
         }
 
-        .socials a {
-            padding-left: 0.2em;
-            padding-right: 0.2em;
-        }
-
-        .masto:hover {
-            color: #ffcc00;
-        }
-
-        .masto {
-            font-size: 2.5rem;
-            color: #858AFA;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .sound:hover {
-            color: #ffcc00;
-        }
-
-        .sound {
-            font-size: 2.5rem;
-            color: #ff8b26;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .inster:hover {
-            color: #ffcc00;
-        }
-
-        .inster {
-            font-size: 2.5rem;
-            color: #f53677;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .whytea:hover {
-            color: #ffcc00;
-        }
-
-        .whytea {
-            font-size: 2.5rem;
-            color: #ff2626;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .band:hover {
-            color: #ffcc00;
-        }
-
-        .band {
-            font-size: 2.5rem;
-            color: #1ea0c4;
-            text-decoration: none;
-            padding: 5px;
-        }
-
-        .tick:hover {
-            color: #ffcc00;
-        }
-
-        .tick {
-            font-size: 2.5rem;
-            color: #ededed;
-            text-decoration: none;
-            padding: 5px;
+        @media screen and (max-width: 491px) {
+            .socials {
+                height: 140px
+            }
         }
 
         .hyperlink {
@@ -357,7 +293,8 @@
             margin-right: 0.2em;
         }
 
-        .navlink:hover, .active {
+        .navlink:hover,
+        .active {
             color: #ffcc00;
         }
 
@@ -376,7 +313,7 @@
         }
 
         #aboveNavDiv {
-            height: 2em;
+            height: 40px;
         }
 
         #belowNavDiv {
@@ -389,7 +326,7 @@
             }
 
             #aboveNavDiv {
-                height: 1em;
+                height: 20px;
             }
 
             #belowNavDiv {
@@ -415,6 +352,13 @@
 
         .soundcloud-excerpt .sound {
             padding-left: 1rem;
+            font-size: 2.5rem;
+            text-decoration: none;
+            color: #ff8b26;
+        }
+
+        .soundcloud-excerpt .sound:hover {
+            color: #ffcc00;
         }
 
         @media screen and (max-width: 900px) {
@@ -436,21 +380,7 @@
     <h1 class="headingTop">
         InVadeR<span style="letter-spacing: 0rem">J</span>
     </h1>
-
-    <div class="socials">
-        <a class="sound fab fa-soundcloud" href="https://soundcloud.com/invaderj-official" target="_blank"
-            aria-label="InVadeRJ-Official on SoundCloud"></a>
-        <a class="band fab fa-bandcamp" href="https://invaderj.bandcamp.com/" target="_blank"
-            aria-label="InVadeRJ on Bandcamp"></a>
-        <a class="whytea fab fa-youtube" href="https://youtube.com/@InVadeRJMusic" target="_blank"
-            aria-label="InVadeRJMusic on YouTube"></a>
-        <a class="inster fab fa-instagram" href="https://www.instagram.com/invaderjmusic/" target="_blank"
-            aria-label="InVadeRJMusic on Instagram"></a>
-        <a rel="me" class="masto fab fa-mastodon" href="https://mastodon.scot/@invaderjmusic" target="_blank"
-            aria-label="InVadeRJMusic on Mastodon"></a>
-        <a class="tick fab fa-tiktok" href="https://www.tiktok.com/@invaderjmusic" target="_blank"
-            aria-label="InVadeRJMusic on TikTok"></a>
-    </div>
+    <iframe src="/socials.html" class="socials"></iframe>
     <div id="aboveNavDiv"></div>
     <nav>
         <a href="/about" class="navlink">About</a>
@@ -459,20 +389,18 @@
     </nav>
     <div id="belowNavDiv"></div>
     <section>
-        <div class="release-box"
-            style="background-image: url('/assets/rp-background-2.webp');">
+        <div class="release-box" style="background-image: url('/assets/rp-background-2.webp');">
             <h2 class="heading motd">
                 Listen to Stories now!
             </h2>
             <div class="clearfix-flex" style="width: 100%">
                 <div class="fourty-flex">
-                    <img src="/assets/stories-image-web.webp"
-                        class="albumart"
+                    <img src="/assets/stories-image-web.webp" class="albumart"
                         alt="Stories album art. A nighttime photo of a street covered in snow, superimposed with a drawing of a woman's profile picture encircled by the Instagram story colours. Text reads: InVadeRJ." />
                 </div>
                 <div class="sixty-flex">
                     <p class="whitebox">
-                        My latest song is out now as a preview release on a few platforms! 
+                        My latest song is out now as a preview release on a few platforms!
                         It's due to be properly released on the single "Repentance" later this year.
                     </p>
                     <a class="button black" href="https://submithub.com/link/invaderj-stories" target="_blank">
@@ -482,11 +410,13 @@
                         View Lyrics
                     </a>
                     <div class="soundcloud-excerpt">
-                        <a class="sound fab fa-soundcloud" href="https://soundcloud.com/invaderj-official" target="_blank"
-                          aria-label="InVadeRJ-Official on SoundCloud"></a>
+                        <a class="sound fab fa-soundcloud" href="https://soundcloud.com/invaderj-official"
+                            target="_blank" aria-label="InVadeRJ-Official on SoundCloud"></a>
                         <p>
-                          The fear of losing our friendship stopped me from admitting how I really felt until it was too late. 
-                           This song is the story of another love that could have been, had I not been fated to fumble it...
+                            The fear of losing our friendship stopped me from admitting how I really felt until it was
+                            too late.
+                            This song is the story of another love that could have been, had I not been fated to fumble
+                            it...
                         </p>
                     </div>
                 </div>
@@ -497,19 +427,19 @@
         <div id="releases"></div>
         <div style="height: 0.5em"></div>
         <h2 class="heading">Releases</h2>
-        <div class="centerbox release-box"
-            style="background-image: url('/assets/bs-background-test.webp');">
+        <div class="centerbox release-box" style="background-image: url('/assets/bs-background-test.webp');">
             <div class="clearfix-flex">
                 <div class="fourty-flex">
-                    <img src="/assets/bittersweet-album-art-web.webp"
-                        class="albumart"
-                        alt="Bittersweet album art. A photo of a park. A church spire punctuates the skyline. To the left, two people walk away from the camera. Text reads: InVadeRJ, Bittersweet." 
-                        loading="lazy"/>
+                    <img src="/assets/bittersweet-album-art-web.webp" class="albumart"
+                        alt="Bittersweet album art. A photo of a park. A church spire punctuates the skyline. To the left, two people walk away from the camera. Text reads: InVadeRJ, Bittersweet."
+                        loading="lazy" />
                 </div>
                 <div class="sixty-flex">
-                    <h2 class="smolheading" style="background-color: rgba(0, 0, 0, 0.6); padding: 0.5em 0.8em;">Bittersweet</h2>
+                    <h2 class="smolheading" style="background-color: rgba(0, 0, 0, 0.6); padding: 0.5em 0.8em;">
+                        Bittersweet</h2>
                     <p class="blackbox" style="background-color: rgba(0, 0, 0, 0.7)">
-                        Featuring an 80s-disco-inspired track and an acoustic song with rich harmonies, this single marks the end of the first era of my music.
+                        Featuring an 80s-disco-inspired track and an acoustic song with rich harmonies, this single
+                        marks the end of the first era of my music.
                     </p>
                     <a class="button see-thru black" href="https://ampl.ink/9YKAb" target="_blank">
                         Listen Now</a>
@@ -520,17 +450,16 @@
             </div>
             <div style="height: 1em;"></div>
         </div>
-        <div class="centerbox release-box"
-            style="background-image: url('/assets/star-website-banner.webp');">
+        <div class="centerbox release-box" style="background-image: url('/assets/star-website-banner.webp');">
             <div class="clearfix-flex">
                 <div class="fourty-flex">
-                    <img src="/assets/star-album-art-webp.webp"
-                        class="albumart"
-                        alt="Star album art. A star shines brightly behind a dark moon, illuminating its edges. Faraway stars dot the empty space all around. Text reads: InVadeRJ, Star." 
-                        loading="lazy"/>
+                    <img src="/assets/star-album-art-webp.webp" class="albumart"
+                        alt="Star album art. A star shines brightly behind a dark moon, illuminating its edges. Faraway stars dot the empty space all around. Text reads: InVadeRJ, Star."
+                        loading="lazy" />
                 </div>
                 <div class="sixty-flex">
-                    <h2 class="smolheading" style="background-color: rgba(0, 0, 0, 0.5); padding: 0.5em 0.8em;">Star</h2>
+                    <h2 class="smolheading" style="background-color: rgba(0, 0, 0, 0.5); padding: 0.5em 0.8em;">Star
+                    </h2>
                     <p class="blackbox">
                         Along with this soft-rock-inspired ode to a star, I released Goodbye, a song I made in four
                         hours.
@@ -545,17 +474,16 @@
             </div>
             <div style="height: 1em;"></div>
         </div>
-        <div class="centerbox release-box"
-            style="background-image: url('/assets/purple-clouds-website-banner.webp');">
+        <div class="centerbox release-box" style="background-image: url('/assets/purple-clouds-website-banner.webp');">
             <div class="clearfix-flex">
                 <div class="fourty-flex">
-                    <img src="/assets/daydreaming-art-webp.webp"
-                        class="albumart"
-                        alt="Daydreaming album art. A sapphire sea stretches to the horizon under a purple sky with yellow clouds. Text reads: InVadeRJ, Daydreaming." 
-                        loading="lazy"/>
+                    <img src="/assets/daydreaming-art-webp.webp" class="albumart"
+                        alt="Daydreaming album art. A sapphire sea stretches to the horizon under a purple sky with yellow clouds. Text reads: InVadeRJ, Daydreaming."
+                        loading="lazy" />
                 </div>
                 <div class="sixty-flex">
-                    <h2 class="smolheading" style="background-color: rgba(0, 0, 0, 0.7); padding: 0.5em 0.8em;">Daydreaming</h2>
+                    <h2 class="smolheading" style="background-color: rgba(0, 0, 0, 0.7); padding: 0.5em 0.8em;">
+                        Daydreaming</h2>
                     <p class="blackbox">
                         My first "proper" release, the single has two songs, each produced by one of my friends. <br />
                     </p>
@@ -577,10 +505,9 @@
             <div style="height: 1em"></div>
             <div class="clearfix" style="width: 100%">
                 <div class="fourtybox">
-                    <img src="/assets/album-art-web.webp"
-                        class="albumart"
-                        alt="I Loved You album art. A photograph of a street at night illuminated by dim yellow street lights. Above it and a layer of dark cloud, the moon is visible, a bright white speck in the dark blue sky. Text reads: InVadeRJ, I Loved You" 
-                        loading="lazy"/>                
+                    <img src="/assets/album-art-web.webp" class="albumart"
+                        alt="I Loved You album art. A photograph of a street at night illuminated by dim yellow street lights. Above it and a layer of dark cloud, the moon is visible, a bright white speck in the dark blue sky. Text reads: InVadeRJ, I Loved You"
+                        loading="lazy" />
                 </div>
                 <div class="sixtybox">
                     <h2 class="smolheading">I Loved You</h2>
@@ -598,13 +525,18 @@
             </div>
         </div>
     </section>
-    <section>
+    <section style="font-size: 1.5rem;">
         <div id="contact"></div>
         <div style="height: 1em"></div>
         <h2 class="heading">Get in Touch</h2>
 
         <p>
-            Please direct all messages to my email:
+            Join my <a class="hyperlink" href="https://fluxer.gg/V6Xcz26p" target="_blank">Fluxer Community</a> to chat
+            with me, my collaborators and other fans!
+        </p>
+
+        <p>
+            You may direct (especially business-related) messages to my email:
             <a class="hyperlink" href="mailto:contact@invaderj.rocks">contact@invaderj.rocks</a>
         </p>
 
@@ -635,7 +567,7 @@
           padding-bottom: 0.7rem;
           font-size: 1rem;
         ">
-            Home page last updated: 15th February 2026
+            Home page last updated: 27th May 2026
         </p>
     </footer>
 </body>
